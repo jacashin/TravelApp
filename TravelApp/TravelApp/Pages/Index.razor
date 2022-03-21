@@ -1,22 +1,30 @@
 ﻿@page "/"
-
+@using TravelApp.Data.Models
+@inject SearchedParams findParam
 <PageTitle>Index</PageTitle>
 
 <h1>Hello, world!</h1>
 
 
-<form>
-<input type="date" />
-<input type="time" />
-<input type="text" value="Coordinate 1"/>
-<input type="text" value="Coordinate 2"/>
+<EditForm Model="@findParam" OnValidSubmit="@Search">
+<input type="date" @bind-value="@findParam.DateRequested" />
+<p>
+    <input type="time" @bind-value="@findParam.TimeRequested"/>
+</p>
+<div></div>
+<p>
+<input type="text" @bind-value="@findParam.FromLocation"/>
+</p>
+<div></div>
+<p>
+    <input type="text"  @bind-value="@findParam.ToLocation"/>
+</p>
 <button class="btn btn-primary" @onclick="Search">Click me</button>
-</form>
+</EditForm>
 
 @code{
-    //public string Search { get; set; }
     private void Search()
     {
-        
+
     }
 }
