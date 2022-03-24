@@ -3,45 +3,55 @@
 @inject SearchedParams findParam
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
-
-
-<EditForm Model="@findParam" OnValidSubmit="@Search">
-<input type="date" @bind-value="@findParam.DateRequested" />Appointment Date
-<p>
-    <input type="time" @bind-value="@findParam.TimeRequested"/>Appointment Time
-</p>
-<div></div>
-<p>
-<input type="text" @bind-value="@findParam.FromLocationAddress"/>From Address
-</p>
-<div></div>
-<p>
-<input type="text" @bind-value="@findParam.FromLocationCity"/>From City
-</p>
-<div></div>
-<p>
-<input type="text" @bind-value="@findParam.FromLocationAreaCode"/>From Zip Code
-</p>
-<div></div>
-<p>
-<input type="text" @bind-value="@findParam.ToLocationAddress" /> To Address
-</p>
-<div></div>
-<p>
-<input type="text" @bind-value="@findParam.ToLocationCity"/>To City
-</p>
-<div></div>
-<p>
-<input type="text" @bind-value="@findParam.ToLocationAreaCode"/>To Zip Code
-</p>
-<div></div>
-<button class="btn btn-primary" @onclick="Search">Click me</button>
+<EditForm Model="@findParam" OnValidSubmit=ValidSearch>
+     <DataAnnotationsValidator />
+    <ValidationSummary />
+    <p>
+         <input type="date" @bind-value="@findParam.DateRequested"/> Appointment Date <em style="color:red;">*</em>
+    </p>
+    <div></div>
+    <p>
+    <input type="time" @bind-value="@findParam.TimeRequested"/> Appointment Time <em style="color:red;">*</em>
+    </p>
+    <div></div>
+    <p>
+        <input type="text" @bind-value="@findParam.FromLocationAddress"/> From Address <em style="color:red;">*</em>
+    </p>
+    <div></div>
+    <p>
+        <input type="text" @bind-value="@findParam.FromLocationCity"/> From City <em style="color:red;">*</em>
+    </p>
+        <div></div>
+    <p>
+        <input type="text" @bind-value="@findParam.FromLocationAreaCode"/> From Zip Code <em style="color:red;">*</em>
+    </p>
+    <div></div>
+    <p>
+        <input type="text" @bind-value="@findParam.ToLocationAddress" /> To Address <em style="color:red;">*</em>
+    </p>
+    <div></div>
+    <p>
+        <input type="text" @bind-value="@findParam.ToLocationCity"/> To City <em style="color:red;">*</em>
+    </p>
+    <div></div>
+    <p>
+        <input type="text" @bind-value="@findParam.ToLocationAreaCode"/> To Zip Code <em style="color:red;">*</em>
+    </p>
+    <div></div>
+    <button class="btn btn-primary" @onclick="ValidSearch">Click me</button>
 </EditForm>
 
 @code{
-    private void Search()
-    {
+    bool isError = false;
 
+    public List<SearchedParams>? Searched { get; set; }
+
+    private void ValidSearch()
+    {
+        isError = true;
+    }
+    private void InvalidSearch(bool isError)
+    {
+        isError = true;
     }
 }
