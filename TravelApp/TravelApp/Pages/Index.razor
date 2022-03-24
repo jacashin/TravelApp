@@ -7,18 +7,35 @@
 
 
 <EditForm Model="@findParam" OnValidSubmit="@Search">
-<input type="date" @bind-value="@findParam.DateRequested" />
+<input type="date" @bind-value="@findParam.DateRequested" />Appointment Date
 <p>
-    <input type="time" @bind-value="@findParam.TimeRequested"/>
+    <input type="time" @bind-value="@findParam.TimeRequested"/>Appointment Time
 </p>
 <div></div>
 <p>
-<input type="text" @bind-value="@findParam.FromLocation"/>
+<input type="text" @bind-value="@findParam.FromLocationAddress"/>From Address
 </p>
 <div></div>
 <p>
-    <input type="text"  @bind-value="@findParam.ToLocation"/>
+<input type="text" @bind-value="@findParam.FromLocationCity"/>From City
 </p>
+<div></div>
+<p>
+<input type="text" @bind-value="@findParam.FromLocationAreaCode"/>From Zip Code
+</p>
+<div></div>
+<p>
+<input type="text" @bind-value="@findParam.ToLocationAddress" /> To Address
+</p>
+<div></div>
+<p>
+<input type="text" @bind-value="@findParam.ToLocationCity"/>To City
+</p>
+<div></div>
+<p>
+<input type="text" @bind-value="@findParam.ToLocationAreaCode"/>To Zip Code
+</p>
+<div></div>
 <button class="btn btn-primary" @onclick="Search">Click me</button>
 </EditForm>
 
