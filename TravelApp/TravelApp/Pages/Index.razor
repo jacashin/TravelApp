@@ -40,7 +40,10 @@
     <div></div>
     <button class="btn btn-primary" @onclick="ValidSearch">Click me</button>
 </EditForm>
-
+@if (@findParam.ToLocationAreaCode != null)
+{
+     <ConfirmForm />
+}
 @code{
     bool isError = false;
 
@@ -54,4 +57,5 @@
     {
         isError = true;
     }
+
 }

@@ -1,48 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jacob.ashin\\OneDrive - Custom Data Solutions, Inc\\Desktop\\Docs for Blazor\\TravelApp\\TravelApp\\TravelApp\\TravelApp\\TravelApp.csproj": {}
+    "C:\\Users\\jacob\\source\\repos\\LearningBlazorServer\\LearningBlazorServer\\TravelApp\\TravelApp\\TravelApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jacob.ashin\\OneDrive - Custom Data Solutions, Inc\\Desktop\\Docs for Blazor\\TravelApp\\TravelApp\\TravelApp\\TravelApp\\TravelApp.csproj": {
+    "C:\\Users\\jacob\\source\\repos\\LearningBlazorServer\\LearningBlazorServer\\TravelApp\\TravelApp\\TravelApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jacob.ashin\\OneDrive - Custom Data Solutions, Inc\\Desktop\\Docs for Blazor\\TravelApp\\TravelApp\\TravelApp\\TravelApp\\TravelApp.csproj",
+        "projectUniqueName": "C:\\Users\\jacob\\source\\repos\\LearningBlazorServer\\LearningBlazorServer\\TravelApp\\TravelApp\\TravelApp.csproj",
         "projectName": "TravelApp",
-        "projectPath": "C:\\Users\\jacob.ashin\\OneDrive - Custom Data Solutions, Inc\\Desktop\\Docs for Blazor\\TravelApp\\TravelApp\\TravelApp\\TravelApp\\TravelApp.csproj",
-        "packagesPath": "C:\\Users\\jacob.ashin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jacob.ashin\\OneDrive - Custom Data Solutions, Inc\\Desktop\\Docs for Blazor\\TravelApp\\TravelApp\\TravelApp\\TravelApp\\obj\\",
+        "projectPath": "C:\\Users\\jacob\\source\\repos\\LearningBlazorServer\\LearningBlazorServer\\TravelApp\\TravelApp\\TravelApp.csproj",
+        "packagesPath": "C:\\Users\\jacob\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jacob\\source\\repos\\LearningBlazorServer\\LearningBlazorServer\\TravelApp\\TravelApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jacob.ashin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.1.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Users\\jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "P:\\Development\\NuGet Packages": {},
-          "http://nuget.devexpress.com/gBfJYgRNxgFIzIzOMiU1sSkD6STmn4BhAoXbTpZRmvnFakfAC9/api": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

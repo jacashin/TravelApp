@@ -1,0 +1,52 @@
+﻿@using TravelApp.Data.Models
+@inject SearchedParams findParam
+
+<h3>ConfirmForm</h3>
+<form>
+    <h1>Confirm Choices</h1>
+	<div class="field">
+		<label for="@findParam.DateRequested">Date:</label>
+		<input type="text" id="DateRequested" name="DateRequested" placeholder="@findParam.DateRequested" />
+		<small></small>
+	</div>
+	<div class="field">
+		<label for="@findParam.TimeRequested">Time:</label>
+		<input type="text" id="TimeRequested" name="TimeRequested" placeholder="@findParam.TimeRequested" />
+		<small></small>
+	</div>
+	<div class="field">
+		<label for="@findParam.FromLocationAddress">Time:</label>
+		<input type="text" id="FromLocationAddress" name="FromLocationAddress" placeholder="@findParam.FromLocationAddress" />
+		<small></small>
+	</div>
+	<div class="field">
+		<label for="@findParam.FromLocationCity">Time:</label>
+		<input type="text" id="FromLocationCity" name="FromLocationCity" placeholder="@findParam.FromLocationCity" />
+		<small></small>
+	</div>
+	<div class="field">
+		<label for="@findParam.FromLocationAreaCode">Time:</label>
+		<input type="text" id="FromLocationAreaCode" name="FromLocationAreaCode" placeholder="@findParam.FromLocationAreaCode" />
+		<small></small>
+	</div>
+	<div class="field">
+		<label for="@findParam.ToLocationAddress">Time:</label>
+		<input type="text" id="ToLocationAddress" name="ToLocationAddress" placeholder="@findParam.ToLocationAddress" />
+		<small></small>
+	</div>
+	<div class="field">
+		<label for="@findParam.ToLocationCity">To City:</label>
+		<input type="text" id="ToLocationCity" name="ToLocationCity" placeholder="@findParam.ToLocationCity" />
+		<small></small>
+	</div>
+	<div class="field">
+		<label for="@findParam.ToLocationAreaCode">Time:</label>
+		<input type="text" id="ToLocationAreaCode" name="ToLocationAreaCode" placeholder="@findParam.ToLocationAreaCode" />
+		<small></small>
+	</div>
+	<button type="submit">Confirm</button>
+</form>
+
+@code {
+
+}
